@@ -1,0 +1,146 @@
+/* INTRO SECTION */
+
+#welcome-section {
+  display: grid;
+  grid-template-columns: 10vw 80vw 10vw;
+  grid-template-rows: 100vh;
+  grid-template-areas: "side" "middle" "side";
+  overflow: hidden;
+  margin-top: 0;
+  height: 100vh;
+  font-size: 8rem;
+}
+.welcome-text {
+  grid-column: 2/3;
+  grid-row: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.welcome-title {
+  margin: 0 auto;
+  font-size: 20vh;
+  background: -webkit-radial-gradient(
+    rgb(162, 255, 178),
+    rgb(162, 255, 178),
+    rgba(162, 255, 178, 0.4)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.welcome-subtitle {
+  margin: 0 auto;
+  font-size: 8vh;
+  background: -webkit-radial-gradient(
+    rgb(162, 255, 178),
+    rgb(162, 255, 178),
+    rgb(162, 255, 178),
+    rgba(162, 255, 178, 0.4)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.flower-background {
+  grid-column: 2/3;
+  grid-row: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flower-box {
+  height: 40vw;
+  width: 40vw;
+  padding: 0;
+  margin: 0;
+  animation: flower-rotate 12s ease-in-out infinite alternate-reverse;
+}
+.flower-container {
+  position: absolute;
+  width: 40vw;
+  height: 40vw;
+}
+.flower-petal {
+  top: 0;
+  margin: 0 auto;
+  width: 35%;
+  height: 35%;
+  border-radius: 50%;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 207, 251, 0.3),
+    rgba(255, 162, 239, 1)
+  );
+  opacity: 0.4;
+  transform-origin: 0 -100%;
+  animation: petal-grow 12s ease-in-out infinite alternate-reverse;
+}
+@keyframes petal-grow {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+  5% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 200%) scale(2.5);
+  }
+}
+.flower2 {
+  transform: rotate(72deg);
+}
+.flower3 {
+  transform: rotate(144deg);
+}
+.flower4 {
+  transform: rotate(216deg);
+}
+.flower5 {
+  transform: rotate(288deg);
+}
+
+@keyframes flower-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  5% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media (max-width: 400px) {
+  #welcome-section {
+    grid-template-columns: 5vw 90vw 5vw;
+  }
+  .welcome-title {
+    margin: 0 auto;
+    font-size: 20vw;
+    font-weight: 700;
+    text-align: center;
+  }
+  .welcome-subtitle {
+    margin: 0 auto;
+    font-size: 8vw;
+    font-weight: 700;
+    text-align: center;
+  }
+  .flower-box {
+    height: 90vw;
+    width: 90vw;
+  }
+  .flower-container {
+    width: 90vw;
+    height: 90vw;
+  }
+}
