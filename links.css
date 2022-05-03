@@ -59,7 +59,6 @@ label {
 
 #form {
   width: 40%;
-  /* min-width: 500px; */
   margin: 0 auto;
 }
 
@@ -79,7 +78,6 @@ label {
 }
 
 #submit:hover {
-  /* color: red; */
   background-color: rgb(162, 255, 178);
   transform: scale(1.01);
 }
@@ -98,7 +96,6 @@ label {
   height: 50vw;
   right: -12rem;
   border-radius: 50%;
-  /* transform: translate(10rem, 30rem); */
   animation: bubble-grow 15s ease-in-out infinite;
   z-index: -1;
 }
@@ -108,7 +105,6 @@ label {
   left: -12rem;
   top: 45rem;
   border-radius: 50%;
-  /* transform: translate(10rem, 30rem); */
   animation: bubble-grow 17s ease-in-out infinite;
   z-index: -2;
 }
@@ -118,7 +114,6 @@ label {
   top: 40rem;
   left: 20vw;
   border-radius: 50%;
-  /* transform: translate(10rem, 30rem); */
   animation: bubble-grow 13s ease-in-out infinite alternate-reverse;
   z-index: -3;
 }
