@@ -124,7 +124,7 @@
     grid-template-columns: 5vw 90vw 5vw;
   }
   .welcome-title {
-    margin: 0 auto;
+    margin: 0 auto 2rem auto;
     font-size: 20vw;
     font-weight: 700;
     text-align: center;
