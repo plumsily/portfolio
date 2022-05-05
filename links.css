@@ -82,15 +82,19 @@ label {
   transform: scale(1.01);
 }
 #submit:focus {
-  animation: submission 2s ease-in-out;
+  animation: submission 1s ease-in-out;
 }
 #submit:active {
   animation: none;
 }
 @keyframes submission {
-  60% {
-    transform: scale(1.05);
+  5% {
+    transform: scale(0.97);
     background-color: rgb(139, 250, 157);
+  }
+  90% {
+    transform: scale(1.01);
+    background-color: rgb(162, 255, 178);
   }
 }
 .petalbubble {
