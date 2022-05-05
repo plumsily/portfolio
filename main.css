@@ -43,7 +43,7 @@ html::-webkit-scrollbar-thumb {
   text-decoration: none;
   color: white;
   display: inline-block;
-  text-shadow: 1px 1px 5px rgba(68, 68, 68, 0.7);
+  text-shadow: 1px 1px 7px rgba(68, 68, 68, 0.7);
   transition: color 300ms, transform 300ms;
 }
 .nav-links:hover {
