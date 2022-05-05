@@ -217,11 +217,50 @@
         </div>
         <div>
           <button type="submit" id="submit" name="submit" value="Send">
-            <span class="button-text">Submit</span>
+            <span>Send</span>
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              class="loader loading"
+              viewBox="0 0 38 38"
+            >
+              <g
+                transform="translate(2 2)"
+                stroke="currentColor"
+                stroke-width="4"
+                fill-rule="evenodd"
+              >
+                <circle
+                  class="st0"
+                  stroke-opacity=".5"
+                  cx="17"
+                  cy="17"
+                  r="16.5"
+                ></circle>
+                <path
+                  class="st1"
+                  d="M33.5 17C33.5 7.9 26.1.5 17 .5"
+                  transform="rotate(249.767 17 17)"
+                >
+                  <animateTransform
+                    accumulate="none"
+                    additive="replace"
+                    attributeName="transform"
+                    calcMode="linear"
+                    dur="1s"
+                    from="0 17 17"
+                    repeatCount="indefinite"
+                    restart="always"
+                    to="360 17 17"
+                    type="rotate"
+                  ></animateTransform>
+                </path>
+              </g>
+            </svg>
           </button>
         </div>
       </form>
-<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
       <div class="petalbubble bubble1"> </div>
       <div class="petalbubble bubble2"> </div>
       <div class="petalbubble bubble3"> </div>
@@ -230,5 +269,22 @@
       <div class="footer-text">Designed and built by Justin Lee. 🌸 Plum blossom, my namesake: 李.
         </div> 
       </footer>
+        <script>
+          const form = document.getElementById("form");
+          var btn = document.getElementById("button");
+
+          form.addEventListener("submit", function (event) {
+            // event.preventDefault();
+            const button = form.querySelector("button");
+            button.classList.add("loading");
+            button.disabled = true;
+            setTimeout(() => {
+              button.classList.remove("loading");
+              button.value = "Success!";
+              button.innerHTML = "Success!";
+              button.style.color = 'black';
+            }, 1500);
+          });
+        </script>
   </body>
 </html>

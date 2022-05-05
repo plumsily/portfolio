@@ -81,22 +81,57 @@ label {
   background-color: rgb(162, 255, 178);
   transform: scale(1.01);
 }
-#submit:focus {
-  animation: submission 1s ease-in-out;
+button * {
+  transition: opacity 0.3s ease-in;
 }
-#submit:active {
-  animation: none;
+button .loader {
+  position: absolute;
+  display: block;
+  fill: transparent;
+  top: calc(50% - 0.75rem);
+  left: calc(50% - 0.75rem);
+  width: 1.5rem;
+  height: 1.5rem;
+  animation: rotating 1.5s linear infinite;
+  display: none;
+  opacity: 0;
 }
-@keyframes submission {
-  5% {
-    transform: scale(0.97);
-    background-color: rgb(139, 250, 157);
+.success {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  display: block;
+  fill: transparent;
+  display: none;
+  opacity: 0;
+}
+@-webkit-keyframes rotating {
+  0% {
+    transform: rotate(0deg);
   }
-  90% {
-    transform: scale(1.01);
-    background-color: rgb(162, 255, 178);
+  to {
+    transform: rotate(1turn);
   }
 }
+@keyframes rotating {
+  0% {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+button.loading span {
+  color: transparent;
+  opacity: 0;
+}
+button.loading .loader {
+  fill: transparent;
+  display: block;
+  opacity: 1;
+}
+
 .petalbubble {
   position: absolute;
   top: 40rem;
