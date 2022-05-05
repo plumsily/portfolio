@@ -187,29 +187,29 @@
       </div>
       <form
         id="form"
-        action="contact-form-process.php"
-        method="post"
+        action="https://docs.google.com/forms/d/e/1FAIpQLSebi1848Mfo8B-PsGxxyJ_kVkogOlmpuhtpy53F8nLShS9ZLw/formResponse?"
         enctype="text/plain"
+        target="hidden_iframe"
       >
         <div>
-          <label for="Name"
+          <label for="entry.321751658"
             >Name:
-            <input type="text" name="Name" class="entry" id="Name" />
+            <input type="text" name="entry.321751658" class="entry" id="entry.321751658" />
           </label>
         </div>
         <div>
-          <label for="Email"
+          <label for="entry.1488843770"
             >Email:
-            <input type="text" name="Email" class="entry" id="Email" />
+            <input type="text" name="entry.1488843770" class="entry" id="entry.1488843770" />
           </label>
         </div>
         <div>
           <label>Comments:</label>
           <br />
           <textarea
-            name="Message"
+            name="entry.1542837341"
             class="entry"
-            id="Message"
+            id="entry.1542837341"
             rows="12"
             cols="35"
             placeholder="Send your comments to me!"
@@ -217,10 +217,11 @@
         </div>
         <div>
           <button type="submit" id="submit" name="submit" value="Send">
-            Submit
+            <span class="button-text">Submit</span>
           </button>
         </div>
       </form>
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
       <div class="petalbubble bubble1"> </div>
       <div class="petalbubble bubble2"> </div>
       <div class="petalbubble bubble3"> </div>

@@ -75,11 +75,23 @@ label {
   transition: background-color 200ms, transform 200ms;
   margin-top: 15px;
   cursor: pointer;
+  z-index: 1;
 }
-
 #submit:hover {
   background-color: rgb(162, 255, 178);
   transform: scale(1.01);
+}
+#submit:focus {
+  animation: submission 2s ease-in-out;
+}
+#submit:active {
+  animation: none;
+}
+@keyframes submission {
+  60% {
+    transform: scale(1.05);
+    background-color: rgb(139, 250, 157);
+  }
 }
 .petalbubble {
   position: absolute;
