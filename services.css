@@ -9,9 +9,9 @@
   );
   display: flex;
   flex-direction: column;
-  gap: 6rem;
+  gap: 8rem;
   justify-content: space-evenly;
-  padding: 10rem 15%;
+  padding: 10rem 10%;
 }
 #services h5 {
   margin: 0;
@@ -32,7 +32,7 @@
   letter-spacing: -0.01rem;
   color: white;
   text-align: center;
-  font-size: 26px;
+  font-size: 2.2rem;
   line-height: 1.5em;
   width: 80%;
 }
@@ -40,8 +40,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 50px;
-  gap: 2rem;
+  font-size: 5rem;
+  gap: 4rem;
 }
 #services .icons span {
   display: inline-block;
@@ -59,15 +59,16 @@
   flex-direction: column;
   gap: 2rem;
   color: white;
-  font-size: 24px;
+  font-size: 2rem;
   font-weight: 300;
   line-height: 1.5em;
 }
 ol {
+  padding: 0;
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin: 0rem 5rem 0rem 5rem;
+  /* margin: 0rem 5rem 0rem 5rem; */
   gap: 2rem;
 }
 .services-text li {
@@ -80,8 +81,8 @@ ol {
 }
 .services-text li span:first-child {
   font-weight: 600;
-  font-size: 22px;
-  padding: 0.5rem 1.5rem;
+  font-size: 2rem;
+  padding: 0.5rem 1.8rem;
   border: 2px solid white;
   border-radius: 9999px;
   letter-spacing: normal;
@@ -91,7 +92,7 @@ ol {
 .services-text li span:last-child {
   font-weight: 200;
   letter-spacing: normal;
-  font-size: 20px;
+  font-size: 1.8rem;
 }
 
 @media (max-width: 500px) {

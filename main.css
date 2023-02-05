@@ -1,5 +1,5 @@
 /* BASE */
-html{
+html {
   font-size: 10px;
 }
 * {
@@ -50,7 +50,7 @@ html::-webkit-scrollbar-thumb {
 }
 #navbar > div {
   display: flex;
-  gap: 0.7rem;
+  gap: 1rem;
 }
 .nav-links {
   font-size: 1.8rem;
