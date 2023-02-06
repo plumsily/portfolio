@@ -34,13 +34,13 @@
   display: flex;
   flex-direction: column;
   font-weight: 300;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
 }
 .contact-subtitle {
   letter-spacing: -0.01rem;
   color: white;
   text-align: center;
-  font-size: 2.2rem;
+  font-size: 2rem;
   line-height: 1.5em;
 }
 .contact-subtitle span {
