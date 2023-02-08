@@ -1,18 +1,20 @@
 #contact {
-  height: auto;
+  min-height: 100vh;
+  min-height: calc(var(--vh, 1vh) * 100);
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 10rem 15%;
+  padding: 10rem 10%;
   position: relative;
   overflow: hidden;
+  gap: 6rem;
 }
 
 #contact h6 {
   margin: 0;
   margin: auto;
-  font-size: 60px;
+  font-size: 6rem;
   font-weight: 500;
   text-align: center;
   color: #89fc00;
@@ -25,20 +27,20 @@
   align-items: center;
   height: 100%;
   width: 40%;
-  font-size: 60px;
-  gap: 2rem;
+  font-size: 6rem;
+  gap: 4rem;
 }
 .contact-subheading {
   display: flex;
   flex-direction: column;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 2.2rem;
 }
 .contact-subtitle {
   letter-spacing: -0.01rem;
   color: white;
   text-align: center;
-  font-size: 22px;
+  font-size: 2.2rem;
   line-height: 1.5em;
 }
 .contact-subtitle span {
@@ -73,22 +75,24 @@
 }
 
 label {
-  font-size: 18px;
+  font-size: 1.8rem;
   color: white;
 }
 .entry {
   width: 100%;
   margin: 5px auto 5px auto;
   font-family: "Archivo", sans-serif;
-  font-size: 18px;
+  font-size: 1.8rem;
+  color: white;
   border-radius: 3px;
   border: 1px solid transparent;
   box-sizing: border-box;
   padding: 10px 10px;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 #form {
-  width: 40%;
+  width: 60%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
