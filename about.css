@@ -50,7 +50,7 @@
 .about-container p {
   margin: 0;
   width: 100%;
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 .about-text {
   align-self: start;
@@ -59,7 +59,7 @@
   justify-content: center;
   /* height: 100%; */
   gap: 3rem;
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: white;
   font-weight: 300;
   letter-spacing: normal;
@@ -124,7 +124,7 @@
   }
   .my-picture {
     justify-self: center;
-    width: 90%;
+    width: 95%;
   }
   .about-container p {
     /* margin: 2rem auto 2rem auto; */
@@ -152,7 +152,7 @@
   .toolkit-section {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: flex-start;
     gap: 2rem;
     font-size: 16px;
@@ -226,6 +226,93 @@
     font-weight: 500;
     font-size: 20px;
     padding: 0.5rem 1.5rem;
+    border: 2px solid #89fc00;
+    color: #89fc00;
+    border-radius: 9999px;
+    letter-spacing: normal;
+    height: max-content;
+    width: max-content;
+  }
+}
+@media (min-width: 501px) and (max-width: 1439px) {
+  #about {
+    gap: 6rem;
+  }
+  #about h5 {
+    font-size: 5rem;
+  }
+  .about-subtitle {
+    letter-spacing: -0.01rem;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 1.5em;
+  }
+  .about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: fit-content;
+    gap: 5rem;
+  }
+  .my-picture {
+    align-self: center;
+    justify-self: center;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+  }
+  .about-container p {
+    margin: 0;
+    width: 100%;
+    font-size: 1.8rem;
+  }
+  .about-text {
+    align-self: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* height: 100%; */
+    gap: 3rem;
+    font-size: 1.8rem;
+    color: white;
+    font-weight: 300;
+    letter-spacing: normal;
+    line-height: 1.5em;
+  }
+  .toolkit-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.8rem;
+    color: white;
+  }
+  .toolkit-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.6rem;
+    color: white;
+  }
+  .toolkit-items {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+  .toolkit-title {
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .toolkit-items > span {
+    font-weight: 500;
+    font-size: 1.6rem;
+    padding: 0.8rem 1.8rem;
     border: 2px solid #89fc00;
     color: #89fc00;
     border-radius: 9999px;
