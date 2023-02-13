@@ -36,12 +36,16 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100%;
-  height: fit-content;
+  /* height: fit-content; */
   gap: 5rem;
 }
-.my-picture {
+.my-picture-container {
+  height: 100%;
+  width: 100%;
   align-self: center;
   justify-self: center;
+}
+.my-picture {
   object-fit: cover;
   height: 100%;
   width: 100%;
