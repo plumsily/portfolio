@@ -21,24 +21,28 @@
 .welcome-title {
   margin: 0 auto;
   font-size: 20vh;
-  background: -webkit-radial-gradient(
+  color: white;
+  /* background: white; */
+  /* background: -webkit-radial-gradient(
     rgb(162, 255, 178),
     rgb(162, 255, 178),
     rgba(162, 255, 178, 0.4)
-  );
-  -webkit-background-clip: text;
+  ); */
+  /* -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
 }
 .welcome-subtitle {
   margin: 0 auto;
   font-size: 8vh;
-  background: -webkit-radial-gradient(
+  font-weight: 600;
+  background: white;
+  /* background: -webkit-radial-gradient(
     rgb(162, 255, 178),
     rgb(162, 255, 178),
     rgb(162, 255, 178),
     rgba(162, 255, 178, 0.4)
-  );
+  ); */
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -60,7 +64,7 @@
   width: 40vw;
   padding: 0;
   margin: 0;
-  animation: flower-rotate 12s ease-in-out infinite alternate-reverse;
+  animation: flower-rotate 10s ease-in-out infinite alternate-reverse;
 }
 .flower-container {
   position: absolute;
@@ -70,29 +74,40 @@
 .flower-petal {
   top: 0;
   margin: 0 auto;
-  width: 35%;
-  height: 35%;
+  width: 45%;
+  height: 45%;
   border-radius: 50%;
-  background: linear-gradient(
+  /* background-color: rgb(253, 148, 10); */
+  /* background-color: rgba(237, 91, 18, 1); */
+  /* background: linear-gradient(
     180deg,
     rgba(255, 207, 251, 0.3),
     rgba(255, 162, 239, 1)
-  );
-  opacity: 0.4;
+  ); */
+  opacity: 0.8;
   transform-origin: 0 -100%;
-  animation: petal-grow 12s ease-in-out infinite alternate-reverse;
+  animation: petal-grow 10s ease-in-out infinite alternate-reverse;
 }
 @keyframes petal-grow {
   0% {
     transform: translate(0, 0) scale(1);
-    opacity: 1;
+    opacity: 0.9;
+    filter: blur(1px);
+    background-color: rgba(220, 0, 115, 0.95);
   }
   5% {
     transform: translate(0, 0) scale(1);
-    opacity: 1;
+    opacity: 0.9;
+    filter: blur(1px);
+    background-color: rgba(220, 0, 115, 0.95);
+  }
+  15% {
+    background-color: rgba(220, 0, 115, 0.95);
   }
   100% {
-    transform: translate(0, 200%) scale(2.5);
+    transform: translate(0, 50%) scale(3);
+    filter: blur(60px);
+    background-color: rgb(10, 14, 253);
   }
 }
 .flower2 {

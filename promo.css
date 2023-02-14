@@ -1,0 +1,76 @@
+#promo {
+  height: max-content;
+  width: 100%;
+  /* background-color: #513aff; */
+  /* background-color: rgba(0, 0, 0, 0.4); */
+  background: linear-gradient(
+    190deg,
+    rgba(220, 0, 115, 0.95),
+    rgba(245, 183, 0, 0.95)
+  );
+  display: flex;
+  gap: 6rem;
+  /* flex-direction: column; */
+  justify-content: center;
+  padding: 10rem 15%;
+}
+.promo-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: full;
+  width: 40%;
+  font-size: 60px;
+}
+#promo h3 {
+  margin: 0;
+  font-size: 60px;
+  font-weight: 500;
+  margin: auto;
+  text-align: center;
+  color: #89fc00;
+}
+
+.promo-text {
+  letter-spacing: -0.01rem;
+  width: 60%;
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: white;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+
+@media (max-width: 400px) {
+  #promo {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+  }
+  #promo h2 {
+    font-size: 40px;
+    margin: 0 5px 2rem 5px;
+  }
+  .promo-container {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+  .my-picture {
+    justify-self: center;
+    width: 75vw;
+  }
+  .promo-container p {
+    margin: 2rem auto 2rem auto;
+    align-self: center;
+    justify-self: center;
+    width: 75vw;
+    font-size: 16px;
+  }
+  .promo-text ul {
+    margin-left: 2rem;
+    font-size: 16px;
+  }
+}

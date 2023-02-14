@@ -4,25 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="title" content="Personal Portfolio" />
     <meta name="author" content="Justin Lee" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="https://images2.imgbox.com/2a/5f/o9bKer4o_o.png" />
     <title>Justin Lee</title>
     <link rel="stylesheet" href="main.css" type="text/css" />
     <link rel="stylesheet" href="intro.css" type="text/css" />
+    <link rel="stylesheet" href="promo.css" type="text/css" />
     <link rel="stylesheet" href="about.css" type="text/css" />
     <link rel="stylesheet" href="projects.css" type="text/css" />
+    <link rel="stylesheet" href="services.css" type="text/css" />
     <link rel="stylesheet" href="links.css" type="text/css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
       rel="stylesheet"
-    />
+    /> -->
     <script
       src="https://kit.fontawesome.com/48526c312e.js"
       crossorigin="anonymous"
     ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -30,14 +39,15 @@
       <nav id="navbar">
         <a href="#welcome-section">
           <img
-          class="logo"
+            class="logo"
             src="https://images2.imgbox.com/2a/5f/o9bKer4o_o.png"
             alt="logo"
           />
         </a>
         <div>
-          <a class="nav-links" href="#about">About</a>
           <a class="nav-links" href="#projects">Work</a>
+          <a class="nav-links" href="#services">Services</a>
+          <a class="nav-links" href="#about">About</a>
           <a class="nav-links" href="#contact">Contact</a>
         </div>
       </nav>
@@ -63,65 +73,109 @@
         </div>
       </div>
       <div class="welcome-text">
-        <h1 class="welcome-title">Hi, I'm Justin</h1>
-        <h2 class="welcome-subtitle">a front-end developer</h2>
+        <h1 class="welcome-title">
+          <span class="title-fade">Hi, </span>
+          <span class="title-fade">I'm Justin</span>
+        </h1>
+        <span class="welcome-subtitle">a full-stack engineer</span>
       </div>
     </section>
-    <section id="about">
-      <h2>Nice to meet you 👋</h2>
-      <div class="about-container">
-        <img
-          class="my-picture"
-          src="https://images2.imgbox.com/d0/3d/bKTZeJje_o.jpg"
+    <section id="promo">
+      <div class="promo-header reveal fade-bottom">
+        <h3 class="reveal fade-bottom">
+          Is your web presence working for you?
+        </h3>
+        <span>🔍</span>
+      </div>
+
+      <!-- <img
+          class="my-picture reveal fade-bottom"
+          src="Swope Justin _0804.jpg"
           alt="picture of me"
-        />
-        <div class="about-text">
-          <p>
-            Hi! Designer, engineer, coder - whatever you want to call me, I'm
-            someone that deeply enjoys building things that just work.
-            <br /><br />
-
-            My interest in web development was spurred back in college, when I
-            started hacking together websites for online drop-shipping stores.
-            While I studied mechanical engineering at UC Berkeley - and managed
-            to work on consumer tech products for a few years - I could never quite
-            forget the thrill of being able to build and deploy digital ideas
-            seemingly overnight. Eventually, I committed to bring my experiences
-            in physical product development to the software arena - where I
-            continue to enjoy to build using the almost limitless opportunity of
-            technology.
-            <br /><br />
-
-            I love the challenge of figuring something out and have been able to
-            quickly learn and integrate myself in a variety of skills:
-          </p>
-          <ul>
-            <!-- <li>UI/UX Design</li>
-            <li>Product Design</li> -->
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-          </ul>
-        </div>
+        /> -->
+      <div class="promo-text">
+        <p class="reveal fade-bottom">
+          If someone needs what you provide, will your website draw them in?
+          What will they see if they are on their phone? A responsive &
+          accessible web presence is no longer merely a 'bonus' or 'nice to
+          have' - it is essential.
+        </p>
+        <p class="reveal fade-bottom">
+          It is my privilege to offer a chance to be seen on the web to small
+          businesses and individuals around me. Whether that be creating a
+          website for you from the ground up, or updating an existing presence
+          for the mobile age. Providing a place for interested parties to find
+          and learn about what you offer is what I offer. How can I help you
+          today?
+        </p>
       </div>
     </section>
     <section id="projects">
-      <h2>Here are some of my projects:</h2>
-      <div class="projects-grid">
-        <a
-          href="https://plumsily.github.io/product-landing-page/"
-          class="project project-tile"
-          target="_blank"
+      <section class="projects-title">
+        <h4 class="reveal fade-bottom">My work</h4>
+        <span class="projects-subtitle reveal fade-bottom"
+          >Here are a few of my latest projects, I invite you to explore
+          them.</span
         >
+      </section>
+
+      <div class="projects-grid">
+        <div class="project project-tile reveal fade-bottom">
+          <span>Mainspring</span>
+          <p>
+            A modern layout with captivating animations for a luxury watch
+            store.
+          </p>
           <img
             class="project-img"
-            src="https://images2.imgbox.com/36/aa/wvirIyUX_o.png"
+            src="mainspring.png"
+            alt="watch-storefront"
+          />
+          <a href="https://plumsily.github.io/watch-storefront" target="_blank">
+            View
+          </a>
+        </div>
+        <div class="project project-tile reveal fade-bottom">
+          <span>Salon</span>
+          <p>
+            A fully responsive, beautiful, and detailed website for a
+            full-service salon
+          </p>
+          <img class="project-img" src="salon.png" alt="hair-salon" />
+          <a href="https://phrygian-bristle-gum.glitch.me/" target="_blank">
+            View
+          </a>
+        </div>
+        <div class="project project-tile reveal fade-bottom">
+          <span>Cuisine Restaurant</span>
+          <p>Responsive and mobile-ready website for a trendy restaurant.</p>
+          <img class="project-img" src="cuisine.png" alt="restaurant" />
+          <a
+            href="https://abyssinian-rambunctious-click.glitch.me/"
+            target="_blank"
+          >
+            View
+          </a>
+        </div>
+        <div class="project project-tile reveal fade-bottom">
+          <span>sculptd. Premium Artwork</span>
+          <p>
+            A clean and modern web layout for an online bidding store of premium
+            artwork.
+          </p>
+          <img
+            class="project-img"
+            src="sculpted.png"
             alt="product-landing-page"
           />
-          sculptd. Landing Page</a
-        >
-        <a
+          <a
+            href="https://plumsily.github.io/product-landing-page/"
+            target="_blank"
+          >
+            View
+          </a>
+        </div>
+        <!-- <a
           href="https://plumsily.github.io/technical-page/"
           class="project project-tile"
           target="_blank"
@@ -156,34 +210,179 @@
             alt="tribute-page"
           />
           Nujabes Tribute Page</a
+        > -->
+      </div>
+    </section>
+    <section id="services">
+      <section class="services-title">
+        <h5 class="reveal fade-bottom">My Services</h5>
+        <p class="services-subtitle reveal fade-bottom">
+          I dedicate myself to presenting my clients with completed projects
+          that not only meet, but exceed, their initial vision. Knowing what to
+          expect when we work together is critical - here is how I deliver
+          success:
+        </p>
+      </section>
+      <!-- <div class="services-header reveal fade-bottom">
+        <h5 class="reveal fade-bottom">My Services</h5>
+        <div class="icons">
+          <span class="fa fa-code reveal fade-bottom"></span>
+          <span class="fa fa-gears reveal fade-bottom"></span>
+          <span class="fa fa-diagram-project reveal fade-bottom"></span>
+          <span class="fa fa-rocket reveal fade-bottom"></span>
+        </div>
+      </div> -->
+      <div class="icons">
+        <span class="fa fa-code reveal fade-bottom"></span>
+        <span class="fa fa-gears reveal fade-bottom"></span>
+        <span class="fa fa-diagram-project reveal fade-bottom"></span>
+        <span class="fa fa-rocket reveal fade-bottom"></span>
+      </div>
+      <div class="services-text">
+        <!-- <p class="reveal fade-bottom">
+          I dedicate myself to presenting my clients with completed projects
+          that not only meet, but exceed, their initial vision. Knowing what to
+          expect when we work together is critical - here is how I deliver
+          success:
+        </p> -->
+
+        <ol>
+          <li>
+            <p class="reveal fade-bottom">
+              <span>1. Consultation</span><br />
+              <span
+                >It all begins with a conversation where we'll pinpoint what
+                this project is all about.</span
+              >
+            </p>
+          </li>
+          <li>
+            <p class="reveal fade-bottom">
+              <span>2. Proposal</span><br />
+              <span
+                >A detailed project proposal including a visual preview will be
+                presented and a plan of action will be decided.</span
+              >
+            </p>
+          </li>
+          <li>
+            <p class="reveal fade-bottom">
+              <span>3. Creation</span><br />
+              <span
+                >Clients receive regular updates regarding their project status
+                while I create and test it.</span
+              >
+            </p>
+          </li>
+          <li>
+            <p class="reveal fade-bottom">
+              <span>4. Launch & Support</span><br />
+              <span
+                >Peace of mind is delivered with the final project in the form
+                of available ongoing support.</span
+              >
+            </p>
+          </li>
+        </ol>
+      </div>
+    </section>
+    <section id="about">
+      <div class="about-title">
+        <h5 class="reveal fade-bottom">Nice to meet you! 👋</h5>
+        <span class="about-subtitle reveal fade-bottom"
+          >I'm a Software Engineer based in Los Angeles, CA</span
         >
+      </div>
+
+      <div class="about-container">
+        <img
+          class="my-picture reveal fade-bottom"
+          src="Swope Justin _0804.jpg"
+          alt="picture of me"
+        />
+        <div class="about-text">
+          <p class="reveal fade-bottom">
+            Engineer, designer, tinkerer - whatever you want to call me, I'm
+            someone that deeply enjoys building things that delight and satisfy
+            people.
+          </p>
+          <p class="reveal fade-bottom">
+            With experience in HTML, CSS, JavaScript, MongoDB and PostgreSQL,
+            React and Node frameworks, I'm focused on creating web applications
+            centered on user experiences and needs. Using an extensive
+            background in product design gathered in the San Francisco tech
+            scene for over 4 years - I consistently apply meaningful solutions
+            to complex technical problems. Most of all, I love to learn about
+            new technologies and skills for my toolkit!
+          </p>
+          <p class="reveal fade-bottom">
+            When I'm not coding, you can find me spending time with my cat,
+            Biscuit, drawing and building my own wooden furniture, or catching
+            the last Formula 1 race.
+          </p>
+          <!-- <p class="reveal fade-bottom">
+            My interest in web development was spurred back in college, when I
+            started hacking together websites for online drop-shipping stores.
+            While I studied mechanical engineering at UC Berkeley - and managed
+            to work on consumer tech products for a few years - I could never
+            quite forget the thrill of being able to build and deploy digital
+            ideas seemingly overnight. Eventually, I committed to bring my
+            experiences in physical product development to the software arena -
+            where I continue to enjoy to build using the almost limitless
+            opportunity of technology.
+          </p> -->
+          <!-- <p class="reveal fade-bottom">
+            I love the challenge of figuring something out and have been able to
+            quickly learn and integrate myself in a variety of skills:
+          </p> -->
+          <!-- <ul>
+            <li>UI/UX Design</li>
+            <li>Product Design</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+          </ul> -->
+        </div>
       </div>
     </section>
     <section id="contact">
-      <h2>Want to work together?</h2>
-        <div class="links-section">
-          <a
-            id="profile-link"
-            href="https://codepen.io/rakukron"
-            target="_blank"
-            class="link"
-            ><i class="fa-brands fa-codepen"></i
-          ></a>
-          <a
-            id="profile-link"
-            href="https://github.com/plumsily"
-            target="_blank"
-            class="link"
-            ><i class="fa-brands fa-github"></i
-          ></a>
-          <a
-            id="profile-link"
-            href="https://www.linkedin.com/in/justinsangwonlee/"
-            target="_blank"
-            class="link"
-            ><i class="fa-brands fa-linkedin"></i
-          ></a>
+      <div class="contact-title">
+        <h6 class="reveal fade-bottom">Want to work together?</h6>
+        <span class="reveal fade-bottom contact-subtitle"
+          >I am currently accepting new freelance clients, interesting project
+          opportunities, and One Piece memes.</span
+        >
+        <div class="reveal fade-bottom contact-subheading">
+          <span class="contact-subtitle"
+            >Email me at: <span>justin.sangwon.lee@gmail.com</span></span
+          >
+          <span class="contact-subtitle">Or send me a quick message here!</span>
         </div>
+      </div>
+
+      <div class="links-section">
+        <a
+          id="profile-link"
+          href="https://twitter.com/plumsily"
+          target="_blank"
+          class="link"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+        <a
+          id="profile-link"
+          href="https://github.com/plumsily"
+          target="_blank"
+          class="link"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a
+          id="profile-link"
+          href="https://www.linkedin.com/in/justinsangwonlee/"
+          target="_blank"
+          class="link"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
       </div>
       <form
         id="form"
@@ -191,19 +390,29 @@
         enctype="text/plain"
         target="hidden_iframe"
       >
-        <div>
+        <div class="reveal fade-bottom">
           <label for="entry.321751658"
             >Name:
-            <input type="text" name="entry.321751658" class="entry" id="entry.321751658" />
+            <input
+              type="text"
+              name="entry.321751658"
+              class="entry"
+              id="entry.321751658"
+            />
           </label>
         </div>
-        <div>
+        <div class="reveal fade-bottom">
           <label for="entry.1488843770"
             >Email:
-            <input type="text" name="entry.1488843770" class="entry" id="entry.1488843770" />
+            <input
+              type="text"
+              name="entry.1488843770"
+              class="entry"
+              id="entry.1488843770"
+            />
           </label>
         </div>
-        <div>
+        <div class="reveal fade-bottom">
           <label>Comments:</label>
           <br />
           <textarea
@@ -215,7 +424,7 @@
             placeholder="Send your comments to me!"
           ></textarea>
         </div>
-        <div>
+        <div class="reveal fade-bottom">
           <button type="submit" id="submit" name="submit" value="Send">
             <span>Send</span>
             <svg
@@ -260,31 +469,38 @@
           </button>
         </div>
       </form>
-      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-      <div class="petalbubble bubble1"> </div>
-      <div class="petalbubble bubble2"> </div>
-      <div class="petalbubble bubble3"> </div>
+      <iframe
+        name="hidden_iframe"
+        id="hidden_iframe"
+        style="display: none"
+        onload="if(submitted) {}"
+      ></iframe>
+      <div class="petalbubble bubble1"></div>
+      <div class="petalbubble bubble2"></div>
+      <div class="petalbubble bubble3"></div>
     </section>
     <footer>
-      <div class="footer-text">Designed and built by Justin Lee. 🌸 Plum blossom, my namesake: 李.
-        </div> 
-      </footer>
-        <script>
-          const form = document.getElementById("form");
-          var btn = document.getElementById("button");
+      <div class="footer-text">
+        <span class="fa fa-copyright"></span> Justin Lee
+      </div>
+    </footer>
+    <script src="index.js"></script>
+    <script>
+      const form = document.getElementById("form");
+      var btn = document.getElementById("button");
 
-          form.addEventListener("submit", function (event) {
-            // event.preventDefault();
-            const button = form.querySelector("button");
-            button.classList.add("loading");
-            button.disabled = true;
-            setTimeout(() => {
-              button.classList.remove("loading");
-              button.value = "Success!";
-              button.innerHTML = "Success!";
-              button.style.color = 'black';
-            }, 1500);
-          });
-        </script>
+      form.addEventListener("submit", function (event) {
+        // event.preventDefault();
+        const button = form.querySelector("button");
+        button.classList.add("loading");
+        button.disabled = true;
+        setTimeout(() => {
+          button.classList.remove("loading");
+          button.value = "Success!";
+          button.innerHTML = "Success!";
+          button.style.color = "black";
+        }, 1500);
+      });
+    </script>
   </body>
 </html>

@@ -1,28 +1,58 @@
 #contact {
   height: auto;
-  flex-direction: column;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding-top: 5rem;
-  padding-bottom: 6rem;
+  justify-content: center;
+  padding: 10rem 15%;
   position: relative;
   overflow: hidden;
 }
 
-#contact h2 {
-  margin: 0 auto 5rem auto;
-  font-size: 44px;
+#contact h6 {
+  margin: 0;
+  margin: auto;
+  font-size: 60px;
   font-weight: 500;
   text-align: center;
-  color: rgb(162, 255, 178);
+  color: #89fc00;
 }
 
-.links-section {
+.contact-title {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 80px;
+  height: full;
+  width: 40%;
+  font-size: 60px;
+  gap: 2rem;
+}
+.contact-subheading {
+  display: flex;
+  flex-direction: column;
+  font-weight: 300;
+  font-size: 18px;
+}
+.contact-subtitle {
+  letter-spacing: -0.01rem;
+  color: white;
+  text-align: center;
+  font-size: 22px;
+  line-height: 1.5em;
+}
+.contact-subtitle span {
+  font-weight: 600;
+}
+.links-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1.5rem;
+  /* width: 80px; */
   position: fixed;
   bottom: 10px;
   left: 0;
@@ -31,27 +61,28 @@
 }
 .link {
   font-size: 30px;
-  width: 40px;
-  padding: 10px 30px;
+  /* width: 40px; */
   color: white;
   transition: color 200ms, transform 200ms;
   position: relative;
   z-index: 1;
 }
 .link:hover {
-  transform: translateY(-2px);
-  color: rgb(162, 255, 178);
+  transform: translateY(-3px);
+  color: #89fc00;
+  transition: all 150ms cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 label {
   font-size: 18px;
+  color: white;
 }
 .entry {
   width: 100%;
   margin: 5px auto 5px auto;
-  font-family: "DM Sans", sans-serif;
+  font-family: "Archivo", sans-serif;
   font-size: 18px;
-  border-radius: 8px;
+  border-radius: 3px;
   border: 1px solid transparent;
   box-sizing: border-box;
   padding: 10px 10px;
@@ -60,16 +91,20 @@ label {
 #form {
   width: 40%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 #submit {
   width: 100%;
   height: 40px;
   font-size: 18px;
-  font-family: "DM Sans", sans-serif;
-  border-radius: 8px;
-  border: 1px solid transparent;
-  background-color: #23cfd5;
+  font-family: "Archivo", sans-serif;
+  border-radius: 3px;
+  border: 2px solid white;
+  color: white;
+  background-color: transparent;
   position: relative;
   z-index: 1;
   transition: background-color 200ms, transform 200ms;
@@ -78,8 +113,11 @@ label {
   z-index: 1;
 }
 #submit:hover {
-  background-color: rgb(162, 255, 178);
+  background-color: #89fc00;
+  color: black;
+  border-color: #89fc00;
   transform: scale(1.01);
+  transition: all 150ms cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 button * {
   transition: opacity 0.3s ease-in;
@@ -138,9 +176,14 @@ button.loading .loader {
   margin: 0 auto;
   background: linear-gradient(
     130deg,
+    rgba(220, 0, 115, 0.5),
+    rgba(220, 0, 115, 0.95)
+  );
+  /* background: linear-gradient(
+    130deg,
     rgba(255, 207, 251, 0.3),
     rgba(255, 162, 239, 1)
-  );
+  ); */
 }
 .bubble1 {
   width: 50vw;
