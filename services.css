@@ -172,15 +172,15 @@ ol {
   animation-delay: 300ms;
 }
 
-ol li .reveal:nth-child(1) {
+ol li p.reveal:nth-child(1) {
   animation-delay: 0ms;
 }
-ol li .reveal:nth-child(2) {
+ol li p.reveal:nth-child(2) {
   animation-delay: 500ms;
 }
-ol li .reveal:nth-child(3) {
+ol li p.reveal:nth-child(3) {
   animation-delay: 1500ms;
 }
-ol li .reveal:nth-child(4) {
+ol li p.reveal:nth-child(4) {
   animation-delay: 2000ms;
 }

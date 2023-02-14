@@ -22,12 +22,13 @@
   height: full;
   width: 40%;
   font-size: 60px;
+  gap: 3rem;
 }
 #promo h3 {
   margin: 0;
   font-size: 60px;
   font-weight: 500;
-  margin: auto;
+  /* margin: auto; */
   text-align: center;
   color: #89fc00;
 }
