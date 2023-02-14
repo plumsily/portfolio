@@ -9,6 +9,7 @@
   margin-top: 0;
   height: 100vh;
   font-size: 8rem;
+  position: relative;
 }
 .welcome-text {
   grid-column: 2/3;
@@ -17,6 +18,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
 }
 .welcome-title {
   margin: 0 auto;
@@ -47,6 +49,37 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.btn-container {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  text-decoration: none;
+}
+.welcome-btn {
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border: 2px solid white;
+  border-radius: 9999px;
+  color: white;
+  display: inline-block;
+  transition: all 300ms ease;
+}
+.welcome-btn:hover {
+  transform: translateY(-5px);
+  color: black;
+  border-color: #89fc00;
+  background-color: #89fc00;
+  transition: all 150ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
 .flower-background {
   grid-column: 2/3;
   grid-row: 1;

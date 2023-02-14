@@ -46,6 +46,22 @@
   line-height: 1.5em;
 }
 
+.mglass {
+  font-size: 40px;
+  /* font-weight: 500; */
+  padding: 0.5em 4em;
+  border: 3px solid #89fc00;
+  border-radius: 9999px;
+  color: #89fc00;
+}
+
+.emphasized {
+  font-weight: 600;
+  font-style: italic;
+  font-size: 1.2em;
+  letter-spacing: normal;
+}
+
 @media (max-width: 400px) {
   #promo {
     padding-top: 3rem;
