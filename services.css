@@ -1,6 +1,6 @@
 #services {
   min-height: 100vh;
-  min-height: -webkit-fill-available;
+  min-height: calc(var(--vh, 1vh) * 100);
   max-height: max-content;
   background: linear-gradient(
     60deg,
@@ -19,7 +19,7 @@
   font-weight: 600;
   text-align: center;
   color: #89fc00;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 .services-title {
   display: flex;
@@ -115,7 +115,7 @@ ol {
     text-align: left;
   }
   .services-title {
-    align-items: center;
+    align-items: flex-start;
     width: 95%;
   }
   ol {
