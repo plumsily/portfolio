@@ -18,6 +18,11 @@
   color: #89fc00;
   line-height: 1em;
 }
+#about img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 .about-title {
   display: flex;
   flex-direction: column;
@@ -123,7 +128,7 @@
   }
   .my-picture {
     justify-self: center;
-    width: 100%;
+    width: 90%;
   }
   .about-container p {
     /* margin: 2rem auto 2rem auto; */
