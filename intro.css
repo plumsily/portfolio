@@ -7,7 +7,8 @@
   grid-template-areas: "side" "middle" "side";
   overflow: hidden;
   margin-top: 0;
-  height: 100vh;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
   font-size: 8rem;
   position: relative;
 }
@@ -158,12 +159,15 @@
     font-size: 30vw;
     font-weight: 700;
     text-align: left;
+    transform: translateY(-50px);
+    margin-bottom: -40px;
   }
   .welcome-subtitle {
     margin: 0 auto;
     font-size: 10vw;
     font-weight: 700;
     text-align: center;
+    display: inline-block;
   }
   .flower-box {
     height: 90vw;
@@ -172,5 +176,8 @@
   .flower-container {
     width: 90vw;
     height: 90vw;
+  }
+  .btn-container {
+    margin-bottom: 2rem;
   }
 }

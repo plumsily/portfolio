@@ -33,7 +33,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100%;
-  grid-gap: 5vw;
+  gap: 5vw;
 }
 .my-picture {
   align-self: start;
@@ -120,7 +120,7 @@
   }
   .about-container {
     grid-template-columns: 1fr;
-    grid-gap: 3rem;
+    gap: 3rem;
   }
   .my-picture {
     justify-self: center;
@@ -181,7 +181,7 @@
   .toolkit-items > span {
     font-weight: 500;
     font-size: 20px;
-    padding: 0.5rem 1.5rem;
+    padding: 0.7rem 1.7rem;
     border: 2px solid #89fc00;
     color: #89fc00;
     border-radius: 9999px;

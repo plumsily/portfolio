@@ -224,7 +224,7 @@ button.loading .loader {
     /* margin: 0 5px 2rem 5px; */
   }
   #form {
-    width: 90%;
+    width: 95%;
     font-size: 16px;
   }
   label {
@@ -232,7 +232,7 @@ button.loading .loader {
   }
   .entry {
     margin: 3px auto 3px auto;
-    font-size: 12px;
+    font-size: 16px;
     padding: 8px 8px;
   }
   .links-section {
@@ -240,7 +240,7 @@ button.loading .loader {
   }
   .contact-title {
     align-items: flex-start;
-    width: 90%;
+    width: 95%;
     gap: 2rem;
   }
   .contact-subheading {
