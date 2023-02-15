@@ -71,6 +71,9 @@
   color: white;
   display: inline-block;
   transition: all 300ms ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 .welcome-btn:hover {
   transform: translateY(-5px);

@@ -59,6 +59,8 @@
   align-self: start;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  height: 100%;
   gap: 3rem;
   font-size: 22px;
   color: white;
@@ -97,6 +99,11 @@
   flex-direction: row;
   gap: 0.5rem;
   justify-content: center;
+}
+.toolkit-title {
+  font-size: 1em;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 .toolkit-items > span {
   font-weight: 500;
