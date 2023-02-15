@@ -151,16 +151,17 @@
 @media (max-width: 500px) {
   #welcome-section {
     grid-template-columns: 5vw 90vw 5vw;
+    justify-items: center;
   }
   .welcome-title {
     margin: 0 auto 1rem auto;
-    font-size: 15vw;
+    font-size: 30vw;
     font-weight: 700;
-    text-align: center;
+    text-align: left;
   }
   .welcome-subtitle {
     margin: 0 auto;
-    font-size: 8vw;
+    font-size: 10vw;
     font-weight: 700;
     text-align: center;
   }

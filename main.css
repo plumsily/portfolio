@@ -204,16 +204,20 @@ footer {
 @keyframes fade-bottom {
   0% {
     transform: translateY(100px);
+    -webkit-transform: translateY(100px);
   }
   100% {
     transform: translateY(0);
+    -webkit-transform: translateY(0);
   }
 }
 @keyframes fade-top {
   0% {
     transform: translateY(-100px);
+    -webkit-transform: translateY(-100px);
   }
   100% {
     transform: translateY(0);
+    -webkit-transform: translateY(0);
   }
 }

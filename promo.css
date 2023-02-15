@@ -69,7 +69,7 @@
     /* margin: 0 5px 2rem 5px; */
   }
   .promo-header {
-    width: 90%;
+    width: 95%;
     gap: 3rem;
   }
   .mglass {
@@ -78,7 +78,7 @@
   }
   .promo-text {
     letter-spacing: -0.01rem;
-    width: 90%;
+    width: 95%;
     align-self: center;
     gap: 1rem;
     font-size: 20px;

@@ -108,7 +108,7 @@
     align-items: center;
   }
   .projects-title {
-    width: 90%;
+    width: 95%;
   }
   #projects h4 {
     font-size: 13vw;
@@ -119,6 +119,7 @@
   .projects-subtitle {
     text-align: left;
     font-size: 20px;
+    line-height: 1.5em;
   }
   .projects-grid {
     grid-template-columns: 1fr;
@@ -129,11 +130,11 @@
   }
   .project-tile {
     height: max-content;
-    width: 90%;
+    width: 95%;
     padding: 0;
   }
   .project-tile a:last-child {
-    font-size: 22px;
+    font-size: 20px;
     padding: 0.8rem 2rem;
   }
   .project-img {
