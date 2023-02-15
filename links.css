@@ -4,7 +4,6 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  justify-content: center;
   padding: 10rem 15%;
   position: relative;
   overflow: hidden;
@@ -24,7 +23,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: full;
+  height: 100%;
   width: 40%;
   font-size: 60px;
   gap: 2rem;
@@ -179,11 +178,6 @@ button.loading .loader {
     rgba(220, 0, 115, 0.5),
     rgba(220, 0, 115, 0.95)
   );
-  /* background: linear-gradient(
-    130deg,
-    rgba(255, 207, 251, 0.3),
-    rgba(255, 162, 239, 1)
-  ); */
 }
 .bubble1 {
   width: 50vw;
@@ -216,17 +210,22 @@ button.loading .loader {
     transform: scale(1.1);
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   #contact {
-    padding-top: 2rem;
-    padding-bottom: 3rem;
+    gap: 4rem;
+    padding: 5rem 1rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
-  #contact h2 {
-    font-size: 40px;
-    margin: 0 5px 2rem 5px;
+  #contact h6 {
+    font-size: 13vw;
+    text-align: left;
+    /* margin: 0 5px 2rem 5px; */
   }
   #form {
-    width: 70%;
+    width: 90%;
+    font-size: 16px;
   }
   label {
     font-size: 16px;
@@ -236,10 +235,30 @@ button.loading .loader {
     font-size: 12px;
     padding: 8px 8px;
   }
-  .link {
-    font-size: 25px;
-    width: 40px;
-    padding: 10px 30px;
+  .links-section {
+    display: none;
+  }
+  .contact-title {
+    align-items: flex-start;
+    width: 90%;
+    gap: 2rem;
+  }
+  .contact-subheading {
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+    font-size: 18px;
+  }
+  .contact-subtitle {
+    letter-spacing: -0.01rem;
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    line-height: 1.2em;
+  }
+  .contact-subtitle span {
+    font-weight: 600;
+    text-align: left;
   }
   .petalbubble {
     top: 32rem;

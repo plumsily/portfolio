@@ -1,29 +1,16 @@
 #services {
   min-height: 100vh;
   max-height: max-content;
-  /* background-color: #513aff; */
-  /* background-color: rgba(0, 0, 0, 0.6); */
   background: linear-gradient(
-    30deg,
+    60deg,
     rgba(0, 139, 248, 0.4),
     rgba(137, 252, 0, 0.5)
   );
   display: flex;
   flex-direction: column;
   gap: 6rem;
-  /* flex-direction: column; */
   justify-content: space-evenly;
   padding: 10rem 15%;
-}
-.services-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: full;
-  width: 40%;
-  font-size: 60px;
-  gap: 3rem;
 }
 #services h5 {
   margin: 0;
@@ -76,29 +63,19 @@
   line-height: 1.5em;
 }
 ol {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem; */
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   margin: 0rem 5rem 0rem 5rem;
-  /* align-items: center; */
   grid-gap: 4rem;
 }
-
 .services-text li {
-  /* width: 50%; */
   letter-spacing: normal;
   height: fit-content;
 }
 .services-text li p {
-  /* line-height: 1.5em; */
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
 }
 .services-text li span:first-child {
   font-weight: 600;
@@ -116,44 +93,67 @@ ol {
   font-size: 20px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   #services {
-    padding-top: 3rem;
-    padding-bottom: 2rem;
+    /* padding-top: 3rem;
+    padding-bottom: 2rem; */
+    gap: 4rem;
+    padding: 5rem 1rem;
+    align-items: center;
   }
-  #services h2 {
-    font-size: 40px;
-    margin: 0 5px 2rem 5px;
+  #services h5 {
+    font-size: 13vw;
+    /* margin: 0 5px 2rem 5px; */
   }
-  .services-container {
-    grid-template-columns: 1fr;
-    grid-gap: 0;
+  .services-subtitle {
+    letter-spacing: -0.01rem;
+    font-size: 20px;
+    line-height: 1.5em;
+    width: 100%;
+    text-align: center;
   }
-  .my-picture {
-    justify-self: center;
-    width: 75vw;
-  }
-  .services-container p {
-    margin: 2rem auto 2rem auto;
-    align-self: center;
-    justify-self: center;
-    width: 75vw;
-    font-size: 16px;
-  }
-  .services-text ul {
-    margin-left: 2rem;
-    font-size: 16px;
-  }
-  #services ol {
-    flex-direction: column;
+  .services-title {
+    align-items: center;
+    width: 90%;
   }
   ol {
     grid-template-columns: 1fr;
-    grid-gap: 0;
-    margin: 0rem 3rem 0rem 3rem;
+    grid-gap: 2rem;
+    padding: 0;
+    margin: 0;
+    /* margin: 0rem 3rem 0rem 3rem; */
+  }
+  .services-text {
+    gap: 2rem;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5em;
+  }
+  .services-text li {
+    letter-spacing: normal;
+    height: fit-content;
+  }
+  .services-text li p {
+    align-items: center;
+  }
+  #services .icons {
+    font-size: 40px;
+    gap: 1rem;
+  }
+  .services-text li span:first-child {
+    font-weight: 600;
+    font-size: 20px;
+    padding: 0.5rem 1.5rem;
+  }
+  .services-text li span:last-child {
+    font-weight: 300;
+    letter-spacing: normal;
+    font-size: 18px;
+    width: 80%;
+    text-align: center;
   }
 }
-@media (max-width: 1600px) {
+@media (min-width: 1600px) {
   ol {
     grid-template-columns: repeat(2, 1fr);
   }

@@ -24,27 +24,12 @@
   margin: 0 auto;
   font-size: 20vh;
   color: white;
-  /* background: white; */
-  /* background: -webkit-radial-gradient(
-    rgb(162, 255, 178),
-    rgb(162, 255, 178),
-    rgba(162, 255, 178, 0.4)
-  ); */
-  /* -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent; */
 }
 .welcome-subtitle {
   margin: 0 auto;
   font-size: 8vh;
   font-weight: 600;
   background: white;
-  /* background: -webkit-radial-gradient(
-    rgb(162, 255, 178),
-    rgb(162, 255, 178),
-    rgb(162, 255, 178),
-    rgba(162, 255, 178, 0.4)
-  ); */
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -113,13 +98,6 @@
   width: 45%;
   height: 45%;
   border-radius: 50%;
-  /* background-color: rgb(253, 148, 10); */
-  /* background-color: rgba(237, 91, 18, 1); */
-  /* background: linear-gradient(
-    180deg,
-    rgba(255, 207, 251, 0.3),
-    rgba(255, 162, 239, 1)
-  ); */
   opacity: 0.8;
   transform-origin: 0 -100%;
   animation: petal-grow 10s ease-in-out infinite alternate-reverse;
@@ -170,13 +148,13 @@
     transform: rotate(360deg);
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   #welcome-section {
     grid-template-columns: 5vw 90vw 5vw;
   }
   .welcome-title {
-    margin: 0 auto 2rem auto;
-    font-size: 20vw;
+    margin: 0 auto 1rem auto;
+    font-size: 15vw;
     font-weight: 700;
     text-align: center;
   }

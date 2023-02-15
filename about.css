@@ -2,8 +2,6 @@
   min-height: 100vh;
   max-height: max-content;
   width: 100%;
-  /* background-color: #513aff; */
-  /* background-color: rgba(0, 0, 0, 0.4); */
   background: linear-gradient(-30deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1));
   display: flex;
   gap: 4rem;
@@ -68,15 +66,6 @@
   letter-spacing: normal;
   line-height: 1.5em;
 }
-.about-text ul {
-  margin-left: -10px;
-  font-size: 20px;
-}
-.toolkit {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
 .toolkit-section {
   display: flex;
   flex-direction: column;
@@ -117,59 +106,87 @@
   width: max-content;
 }
 
-.about-container .car {
-  z-index: -10;
-  font-size: 40px;
-  align-self: flex-end;
-  width: max-content;
-  height: max-content;
-  padding: 1rem 1rem;
-  /* display: inline-block; */
-  animation: car 5000ms ease-in-out 150ms infinite normal none;
-}
-
-@keyframes car {
-  0% {
-    opacity: 0;
-    transform: translateX(0px);
-  }
-  10%,
-  15% {
-    opacity: 1;
-    transform: translateX(-50px);
-  }
-  100% {
-    opacity: 0;
-    transform: translateX(-50vw);
-  }
-}
-
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   #about {
-    padding-top: 3rem;
-    padding-bottom: 2rem;
+    gap: 4rem;
+    padding: 5rem 1rem;
+    align-items: center;
   }
-  #about h2 {
-    font-size: 40px;
-    margin: 0 5px 2rem 5px;
+  #about h5 {
+    font-size: 13vw;
+    text-align: left;
+    width: 90%;
+    /* margin: 0 5px 2rem 5px; */
   }
   .about-container {
     grid-template-columns: 1fr;
-    grid-gap: 0;
+    grid-gap: 3rem;
   }
   .my-picture {
     justify-self: center;
-    width: 75vw;
+    width: 100%;
   }
   .about-container p {
-    margin: 2rem auto 2rem auto;
+    /* margin: 2rem auto 2rem auto; */
     align-self: center;
     justify-self: center;
-    width: 75vw;
-    font-size: 16px;
+    /* width: 75vw; */
+    width: 90%;
+    font-size: 18px;
   }
-  .about-text ul {
-    margin-left: 2rem;
+  .about-title {
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-subtitle {
+    letter-spacing: -0.01rem;
+    text-align: left;
+    font-size: 20px;
+    width: 90%;
+  }
+  .about-text {
+    line-height: 1.2em;
+  }
+  .toolkit-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
     font-size: 16px;
+    color: white;
+    width: 90%;
+  }
+  .toolkit-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    font-size: 16px;
+    color: white;
+  }
+  .toolkit-items {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+  .toolkit-title {
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+  .toolkit-items > span {
+    font-weight: 500;
+    font-size: 20px;
+    padding: 0.5rem 1.5rem;
+    border: 2px solid #89fc00;
+    color: #89fc00;
+    border-radius: 9999px;
+    letter-spacing: normal;
+    height: max-content;
+    width: max-content;
   }
 }

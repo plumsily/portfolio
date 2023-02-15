@@ -1,8 +1,6 @@
 #promo {
   height: max-content;
   width: 100%;
-  /* background-color: #513aff; */
-  /* background-color: rgba(0, 0, 0, 0.4); */
   background: linear-gradient(
     190deg,
     rgba(220, 0, 115, 0.95),
@@ -10,7 +8,6 @@
   );
   display: flex;
   gap: 6rem;
-  /* flex-direction: column; */
   justify-content: center;
   padding: 10rem 15%;
 }
@@ -19,7 +16,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: full;
+  height: 100%;
   width: 40%;
   font-size: 60px;
   gap: 3rem;
@@ -28,7 +25,6 @@
   margin: 0;
   font-size: 60px;
   font-weight: 500;
-  /* margin: auto; */
   text-align: center;
   color: #89fc00;
 }
@@ -48,7 +44,6 @@
 
 .mglass {
   font-size: 40px;
-  /* font-weight: 500; */
   padding: 0.5em 4em;
   border: 3px solid #89fc00;
   border-radius: 9999px;
@@ -62,32 +57,32 @@
   letter-spacing: normal;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   #promo {
-    padding-top: 3rem;
-    padding-bottom: 2rem;
+    gap: 4rem;
+    padding: 5rem 1rem;
+    align-items: center;
+    flex-direction: column;
   }
-  #promo h2 {
-    font-size: 40px;
-    margin: 0 5px 2rem 5px;
+  #promo h3 {
+    font-size: 10vw;
+    /* margin: 0 5px 2rem 5px; */
   }
-  .promo-container {
-    grid-template-columns: 1fr;
-    grid-gap: 0;
+  .promo-header {
+    width: 90%;
+    gap: 3rem;
   }
-  .my-picture {
-    justify-self: center;
-    width: 75vw;
+  .mglass {
+    font-size: 30px;
+    padding: 0.5em 4em;
   }
-  .promo-container p {
-    margin: 2rem auto 2rem auto;
+  .promo-text {
+    letter-spacing: -0.01rem;
+    width: 90%;
     align-self: center;
-    justify-self: center;
-    width: 75vw;
-    font-size: 16px;
-  }
-  .promo-text ul {
-    margin-left: 2rem;
-    font-size: 16px;
+    gap: 1rem;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5em;
   }
 }
