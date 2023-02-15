@@ -1,6 +1,7 @@
 /* WORK SECTION */
 #projects {
   min-height: 100vh;
+  min-height: -webkit-fill-available;
   max-height: max-content;
   width: 100%;
   background: linear-gradient(
@@ -111,7 +112,7 @@
     width: 95%;
   }
   #projects h4 {
-    font-size: 13vw;
+    font-size: 15vw;
     text-align: left;
     align-self: flex-start;
     /* margin: 0 5px 2rem 5px; */

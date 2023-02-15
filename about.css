@@ -1,5 +1,6 @@
 #about {
   min-height: 100vh;
+  min-height: -webkit-fill-available;
   max-height: max-content;
   width: 100%;
   background: linear-gradient(-30deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1));
@@ -113,7 +114,7 @@
     align-items: center;
   }
   #about h5 {
-    font-size: 13vw;
+    font-size: 15vw;
     text-align: left;
     width: 95%;
     /* margin: 0 5px 2rem 5px; */
@@ -135,7 +136,7 @@
     font-size: 18px;
   }
   .about-title {
-    gap: 3rem;
+    gap: 2rem;
     align-items: center;
     justify-content: center;
   }
