@@ -1,5 +1,7 @@
 /* BASE */
-
+html{
+  font-size: 10px;
+}
 * {
   letter-spacing: -0.04em;
   box-sizing: border-box;
@@ -39,8 +41,8 @@ html::-webkit-scrollbar-thumb {
   z-index: 100;
 }
 .logo {
-  width: 60px;
-  height: 60px;
+  width: 6rem;
+  height: 6rem;
   transition: transform 300ms;
 }
 .logo:hover {
@@ -51,9 +53,9 @@ html::-webkit-scrollbar-thumb {
   gap: 0.7rem;
 }
 .nav-links {
-  font-size: 20px;
-  font-weight: 500;
-  padding: 1rem 2rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 1.2rem 2.2rem;
   backdrop-filter: blur(10px);
   border: 2px solid white;
   border-radius: 9999px;

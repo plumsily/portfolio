@@ -17,7 +17,7 @@
 }
 #projects h4 {
   margin: 0;
-  font-size: 60px;
+  font-size: 6rem;
   font-weight: 600;
   text-align: center;
   color: #89fc00;
@@ -34,7 +34,13 @@
   letter-spacing: -0.01rem;
   color: white;
   text-align: center;
-  font-size: 26px;
+  font-size: 2.2rem;
+  text-decoration: none;
+}
+.projects-subtitle a{
+  text-decoration: none;
+  color: #89fc00;
+  font-weight: 600;
 }
 .projects-grid {
   display: grid;
