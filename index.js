@@ -75,6 +75,9 @@ welcomeDevBtn.addEventListener("click", toggleDevMode);
 frontEndBtn.addEventListener("click", toggleFrontEndMode);
 devBtn.addEventListener("click", toggleDevMode);
 
+frontEndBtn.style.transition = "transform 150ms ease";
+devBtn.style.transition = "transform 150ms ease";
+
 function toggleFrontEndMode() {
   frontEndGrid.style.display = "grid";
   frontEndBtn.style.background = "#89fc00";
