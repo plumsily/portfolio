@@ -13,6 +13,7 @@
   gap: 8rem;
   flex-direction: column;
   justify-content: space-evenly;
+  align-items: center;
   padding: 10rem 5%;
 }
 #projects h4 {
@@ -42,11 +43,13 @@
   color: #89fc00;
   font-weight: 600;
 }
-.projects-grid {
+.projects-grid,
+.projects-dev-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   margin: 0rem 5rem 0rem 5rem;
   gap: 4rem;
+  transition: all 150ms ease;
 }
 .project-tile {
   font-size: 2.2rem;
@@ -117,8 +120,59 @@
   line-height: 1.5em;
 }
 
+.projects-button-container {
+  display: flex;
+  gap: 1rem;
+  width: 80%;
+  justify-content: center;
+}
+.projects-button-container button {
+  /* width: 50%; */
+  background-color: transparent;
+  font-family: "Archivo", Helvetica, Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  border: 2px solid #89fc00;
+  border-radius: 9999px;
+  color: #89fc00;
+  padding: 1.2rem 2.5rem;
+}
+.projects-button-container button:first-child {
+  color: black;
+  border-color: #89fc00;
+  background-color: #89fc00;
+  font-weight: 600;
+}
+.projects-button-container button:hover {
+  transform: translateY(-5px);
+  color: black;
+  border-color: #89fc00;
+  background-color: #89fc00;
+  transition: all 150ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.projects-dev-grid {
+  display: none;
+}
+.projects-dev-grid .project-tile a:last-child {
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 500;
+  border: 2px solid #89fc00;
+  border-radius: 9999px;
+  color: #89fc00;
+  padding: 1.2rem 2.5rem;
+}
+.projects-dev-grid .project-tile a:last-child:hover {
+  transform: translateY(-5px);
+  color: black;
+  border-color: #89fc00;
+  background-color: #89fc00;
+  transition: all 150ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
 @media (max-width: 1600px) {
-  .projects-grid {
+  .projects-grid,
+  .projects-dev-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -147,7 +201,8 @@
     font-size: 20px;
     line-height: 1.5em;
   }
-  .projects-grid {
+  .projects-grid,
+  .projects-dev-grid {
     grid-template-columns: 1fr;
     margin: 0;
     gap: 4rem;

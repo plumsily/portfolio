@@ -60,3 +60,44 @@ function reveal() {
 
 window.addEventListener("scroll", reveal);
 reveal();
+
+let welcomeFrontEndBtn = document.getElementById("welcome-frontend-btn");
+let welcomeDevBtn = document.getElementById("welcome-dev-btn");
+
+let frontEndBtn = document.getElementById("projects-frontend-btn");
+let devBtn = document.getElementById("projects-dev-btn");
+
+let frontEndGrid = document.getElementById("frontend-grid");
+let devGrid = document.getElementById("dev-grid");
+
+welcomeFrontEndBtn.addEventListener("click", toggleFrontEndMode);
+welcomeDevBtn.addEventListener("click", toggleDevMode);
+frontEndBtn.addEventListener("click", toggleFrontEndMode);
+devBtn.addEventListener("click", toggleDevMode);
+
+function toggleFrontEndMode() {
+  frontEndGrid.style.display = "grid";
+  frontEndBtn.style.background = "#89fc00";
+  frontEndBtn.style.borderColor = "#89fc00";
+  frontEndBtn.style.color = "black";
+  frontEndBtn.style.fontWeight = "600";
+
+  devGrid.style.display = "none";
+  devBtn.style.background = "transparent";
+  devBtn.style.borderColor = "#89fc00";
+  devBtn.style.color = "#89fc00";
+  devBtn.style.fontWeight = "500";
+}
+function toggleDevMode() {
+  devGrid.style.display = "grid";
+  devBtn.style.background = "#89fc00";
+  devBtn.style.borderColor = "#89fc00";
+  devBtn.style.color = "black";
+  devBtn.style.fontWeight = "600";
+
+  frontEndGrid.style.display = "none";
+  frontEndBtn.style.background = "transparent";
+  frontEndBtn.style.borderColor = "#89fc00";
+  frontEndBtn.style.color = "#89fc00";
+  frontEndBtn.style.fontWeight = "500";
+}

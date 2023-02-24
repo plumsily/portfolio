@@ -72,9 +72,10 @@
         </h1>
         <span class="welcome-subtitle">a full-stack engineer</span>
         <a class="btn-container" href="#promo">
-          <span class="welcome-btn"
-            >I need a site <span class="fa fa-arrow-down"></span
-          ></span>
+          <span class="welcome-btn" id="welcome-frontend-btn"
+            >I need a site</span
+          >
+          <span class="welcome-btn" id="welcome-dev-btn">I need a dev</span>
         </a>
       </div>
     </section>
@@ -122,8 +123,14 @@
           ></span
         >
       </section>
+      <section class="projects-button-container">
+        <button id="projects-frontend-btn" class="reveal fade-bottom">
+          Sites
+        </button>
+        <button id="projects-dev-btn" class="reveal fade-bottom">Dev</button>
+      </section>
 
-      <div class="projects-grid">
+      <div class="projects-grid" id="frontend-grid">
         <div class="project project-tile reveal fade-bottom">
           <span>Mainspring</span>
           <a
@@ -196,6 +203,47 @@
             A clean and modern web layout for an online bidding store of premium
             artwork.
           </p>
+        </div>
+      </div>
+
+      <div class="projects-dev-grid" id="dev-grid">
+        <div class="project project-tile reveal fade-bottom">
+          <span>TypeDex</span>
+          <a
+            class="project-link"
+            href="https://plumsily.github.io/typedex"
+            target="_blank"
+          >
+            <img class="project-img" src="typedex.png" alt="typedex-ui" />
+            <div class="overlay">
+              <span class="project-view"> View </span>
+            </div>
+          </a>
+          <p>
+            A handy Pokémon battle companion app that can show type weaknesses
+            of any Pokémon. TypeDex also searches move matchups as well. Built
+            with React.
+          </p>
+          <a href="https://github.com/plumsily/typedex">GitHub repo</a>
+        </div>
+        <div class="project project-tile reveal fade-bottom">
+          <span>Formula 1 Schedule Landing Page</span>
+          <a
+            class="project-link"
+            href="https://plumsily.github.io/f1-new-tab/"
+            target="_blank"
+          >
+            <img class="project-img" src="f1.png" alt="f1-landing-page" />
+            <div class="overlay">
+              <span class="project-view"> View </span>
+            </div>
+          </a>
+          <p>
+            A Chrome extension to replace the default new tab page with one that
+            displays current and past Formula 1 race information. Built with
+            React.
+          </p>
+          <a href="https://github.com/plumsily/f1-new-tab">GitHub repo</a>
         </div>
       </div>
     </section>
