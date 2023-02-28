@@ -9,6 +9,7 @@
   gap: 8rem;
   flex-direction: column;
   justify-content: space-evenly;
+  align-items: center;
   padding: 10rem 10%;
 }
 #about h5 {
