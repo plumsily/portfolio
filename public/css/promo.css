@@ -49,7 +49,9 @@
 
 .mglass {
   font-size: 3rem;
-  padding: 0.5em 4em;
+  padding: 0.5em 0;
+  width: 60%;
+  text-align: center;
   border: 3px solid #89fc00;
   border-radius: 9999px;
   color: #89fc00;
@@ -80,7 +82,7 @@
   }
   .mglass {
     font-size: 3rem;
-    padding: 0.5em 4em;
+    padding: 0.5em 0;
   }
   .promo-text {
     letter-spacing: -0.01rem;
@@ -103,7 +105,8 @@
   }
   .mglass {
     font-size: 2.5rem;
-    padding: 0.5em 4em;
+    padding: 0.5em 0;
+    width: 70%;
   }
   .promo-text {
     font-size: 1.8rem;
