@@ -1,7 +1,7 @@
 #about {
   min-height: 100vh;
   min-height: calc(var(--vh, 1vh) * 100);
-  /* height: max-content; */
+  height: max-content;
   width: 100%;
   background: linear-gradient(-30deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1));
   display: flex;
@@ -237,6 +237,9 @@
     letter-spacing: normal;
     height: max-content;
     width: max-content;
+  }
+  .my-picture-container {
+    height: 80%;
   }
 }
 @media (min-width: 501px) and (max-width: 1439px) {
