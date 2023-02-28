@@ -328,4 +328,7 @@
     height: max-content;
     width: max-content;
   }
+  .my-picture-container {
+    height: 60%;
+  }
 }
