@@ -2,7 +2,7 @@
   min-height: 100vh;
   min-height: calc(var(--vh, 1vh) * 100);
   min-height: -webkit-fill-available;
-  height: fit-content;
+  max-height: max-content;
   width: 100%;
   background: linear-gradient(-30deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1));
   display: flex;
