@@ -166,9 +166,10 @@
   border-radius: 9999px;
   color: #89fc00;
   padding: 1.2rem 2.5rem;
+  transition: all 150ms cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .projects-dev-grid .project-tile a:last-child:hover {
-  transform: translateY(-5px);
+  /* transform: translateY(-5px); */
   color: black;
   border-color: #89fc00;
   background-color: #89fc00;
@@ -283,3 +284,16 @@
 #projects .projects-grid .reveal:nth-child(4) {
   animation-delay: 300ms;
 }
+
+#projects .projects-dev-grid .reveal:nth-child(1) {
+  animation-delay: 0ms;
+}
+#projects .projects-dev-grid .reveal:nth-child(2) {
+  animation-delay: 100ms;
+}
+#projects .projects-dev-grid .reveal:nth-child(3) {
+  animation-delay: 200ms;
+}
+/* #projects .projects--dev-grid .reveal:nth-child(4) {
+  animation-delay: 300ms;
+} */

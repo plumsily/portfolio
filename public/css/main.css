@@ -5,6 +5,7 @@ html {
 * {
   letter-spacing: -0.04em;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 p {
   letter-spacing: 0;
@@ -66,7 +67,7 @@ html::-webkit-scrollbar-thumb {
   transition: all 300ms ease;
 }
 .nav-links:hover {
-  transform: translateY(-5px);
+  /* transform: translateY(-5px); */
   font-weight: 600;
   color: black;
   border-color: #89fc00;
