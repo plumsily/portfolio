@@ -58,7 +58,7 @@ html::-webkit-scrollbar-thumb {
 .nav-links {
   font-size: 1.8rem;
   font-weight: 600;
-  padding: 1.2rem 2.2rem;
+  padding: 1.2rem 2.4rem;
   /* backdrop-filter: blur(10px); */
   border: 2px solid white;
   border-radius: 9999px;
