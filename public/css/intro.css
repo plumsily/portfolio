@@ -46,7 +46,6 @@
   gap: 1rem;
   justify-content: center;
   margin-bottom: 2rem;
-  text-decoration: none;
 }
 .welcome-btn {
   position: relative;
@@ -62,6 +61,7 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  text-decoration: none;
 }
 .welcome-btn:hover {
   transform: translateY(-5px);

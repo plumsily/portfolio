@@ -70,6 +70,9 @@ let devBtn = document.getElementById("projects-dev-btn");
 let frontEndGrid = document.getElementById("frontend-grid");
 let devGrid = document.getElementById("dev-grid");
 
+let promoSummary = document.getElementById("promo");
+let devSummary = document.getElementById("promo-dev");
+
 welcomeFrontEndBtn.addEventListener("click", toggleFrontEndMode);
 welcomeDevBtn.addEventListener("click", toggleDevMode);
 frontEndBtn.addEventListener("click", toggleFrontEndMode);
@@ -79,6 +82,9 @@ frontEndBtn.style.transition = "transform 150ms ease";
 devBtn.style.transition = "transform 150ms ease";
 
 function toggleFrontEndMode() {
+  devSummary.style.display = "none";
+  promoSummary.style.display = "flex";
+
   frontEndGrid.style.display = "grid";
   frontEndBtn.style.background = "#89fc00";
   frontEndBtn.style.borderColor = "#89fc00";
@@ -92,6 +98,9 @@ function toggleFrontEndMode() {
   devBtn.style.fontWeight = "500";
 }
 function toggleDevMode() {
+  devSummary.style.display = "flex";
+  promoSummary.style.display = "none";
+
   devGrid.style.display = "grid";
   devBtn.style.background = "#89fc00";
   devBtn.style.borderColor = "#89fc00";

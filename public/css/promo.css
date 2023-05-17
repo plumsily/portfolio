@@ -1,10 +1,11 @@
-#promo {
+#promo,
+#promo-dev {
   height: max-content;
   width: 100%;
   background: linear-gradient(
-    190deg,
-    rgba(220, 0, 115, 0.95),
-    rgba(245, 131, 0, 0.95)
+    180deg,
+    rgba(220, 0, 115, 0.9),
+    rgba(245, 110, 0, 0.9)
   );
   display: flex;
   gap: 8rem;
@@ -22,7 +23,8 @@
   font-size: 5rem;
   gap: 5rem;
 }
-#promo h3 {
+#promo h3,
+#promo-dev h3 {
   margin: 0;
   font-size: 5rem;
   font-weight: 500;
@@ -59,20 +61,26 @@
 
 .emphasized {
   font-weight: 600;
-  /* font-style: italic; */
-  color: #89fc00;
-  font-size: 1.2em;
+  font-style: italic;
+  /* color: #89fc00; */
+  /* font-size: 1.1em; */
   letter-spacing: normal;
 }
 
+#promo-dev {
+  display: none;
+}
+
 @media (max-width: 500px) {
-  #promo {
+  #promo,
+  #promo-dev {
     gap: 4rem;
     padding: 5rem 1rem;
     align-items: center;
     flex-direction: column;
   }
-  #promo h3 {
+  #promo h3,
+  #promo-dev h3 {
     font-size: 10vw;
     /* margin: 0 5px 2rem 5px; */
   }
@@ -100,7 +108,8 @@
   }
 }
 @media (min-width: 501px) and (max-width: 1439px) {
-  #promo h3 {
+  #promo h3,
+  #promo-dev h3 {
     font-size: 4rem;
   }
   .mglass {
