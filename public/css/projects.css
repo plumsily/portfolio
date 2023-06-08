@@ -155,7 +155,8 @@
   background-color: #89fc00 !important;
   transition: all 150ms cubic-bezier(0.165, 0.84, 0.44, 1) !important;
 }
-.projects-dev-grid {
+
+.projects-grid {
   display: none;
 }
 .projects-dev-grid .project-tile a:last-child {
@@ -185,6 +186,11 @@
 }
 .projects-summary h5 {
   font-size: 3rem;
+}
+#locked-link {
+  pointer-events: none;
+  border-color: gray;
+  color: gray;
 }
 
 @media (max-width: 1600px) {
@@ -305,6 +311,9 @@
 #projects .projects-dev-grid .reveal:nth-child(3) {
   animation-delay: 200ms;
 }
-/* #projects .projects--dev-grid .reveal:nth-child(4) {
+#projects .projects--dev-grid .reveal:nth-child(4) {
   animation-delay: 300ms;
-} */
+}
+#projects .projects--dev-grid .reveal:nth-child(4) {
+  animation-delay: 400ms;
+}

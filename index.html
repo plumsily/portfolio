@@ -29,14 +29,14 @@
 
   <body>
     <header>
+      <a href="#welcome-section">
+        <img
+          class="logo"
+          src="https://images2.imgbox.com/2a/5f/o9bKer4o_o.png"
+          alt="logo"
+        />
+      </a>
       <nav id="navbar">
-        <a href="#welcome-section">
-          <img
-            class="logo"
-            src="https://images2.imgbox.com/2a/5f/o9bKer4o_o.png"
-            alt="logo"
-          />
-        </a>
         <div>
           <a class="nav-links" href="#projects">Work</a>
           <a class="nav-links" href="#services">Services</a>
@@ -72,11 +72,11 @@
         </h1>
         <span class="welcome-subtitle">a full-stack engineer</span>
         <div class="btn-container">
-          <a class="welcome-btn" id="welcome-frontend-btn" href="#promo"
-            >I need a site</a
-          >
           <a class="welcome-btn" id="welcome-dev-btn" href="#promo-dev"
             >I need a dev</a
+          >
+          <a class="welcome-btn" id="welcome-frontend-btn" href="#promo"
+            >I need a site</a
           >
         </div>
       </div>
@@ -154,10 +154,10 @@
         >
       </section>
       <section class="projects-button-container">
+        <button id="projects-dev-btn" class="reveal fade-bottom">Dev</button>
         <button id="projects-frontend-btn" class="reveal fade-bottom">
           Sites
         </button>
-        <button id="projects-dev-btn" class="reveal fade-bottom">Dev</button>
       </section>
       <div class="projects-grid" id="frontend-grid">
         <div class="project project-tile reveal fade-bottom">
@@ -179,6 +179,27 @@
           <p>
             A modern layout with captivating animations for a luxury watch
             store.
+          </p>
+        </div>
+        <div class="project project-tile reveal fade-bottom">
+          <span>sculptd. Premium Artwork</span>
+          <a
+            class="project-link"
+            href="https://plumsily.github.io/product-landing-page/"
+            target="_blank"
+          >
+            <img
+              class="project-img"
+              src="public/imgs/sculpted.jpg"
+              alt="product-landing-page"
+            />
+            <div class="overlay">
+              <span class="project-view"> View </span>
+            </div>
+          </a>
+          <p>
+            A clean and modern web layout for an online bidding store of premium
+            artwork.
           </p>
         </div>
         <div class="project project-tile reveal fade-bottom">
@@ -220,30 +241,48 @@
           </a>
           <p>Responsive and mobile-ready website for a trendy restaurant.</p>
         </div>
+      </div>
+      <div class="projects-dev-grid" id="dev-grid">
         <div class="project project-tile reveal fade-bottom">
-          <span>sculptd. Premium Artwork</span>
-          <a
-            class="project-link"
-            href="https://plumsily.github.io/product-landing-page/"
-            target="_blank"
-          >
+          <span>Strata</span>
+          <a class="project-link" href="javascript:void(0)">
             <img
               class="project-img"
-              src="public/imgs/sculpted.jpg"
-              alt="product-landing-page"
+              src="public/imgs/strata1.png"
+              alt="strata-ui"
             />
-            <div class="overlay">
-              <span class="project-view"> View </span>
-            </div>
+            <!-- <div class="overlay">
+              <span class="project-view"> View Demo </span>
+            </div> -->
           </a>
           <p>
-            A clean and modern web layout for an online bidding store of premium
-            artwork.
+            A full stack online whiteboard app built with Next.js, Fabric.js,
+            Firebase, Express, and Socket.io. Users can collaborate their
+            brainstorming sessions in real-time.
           </p>
+          <a href="https://github.com/plumsily/strata" target="_blank"
+            >GitHub repo</a
+          >
         </div>
-      </div>
-
-      <div class="projects-dev-grid" id="dev-grid">
+        <div class="project project-tile reveal fade-bottom">
+          <span>Optic Analytics</span>
+          <a class="project-link" href="javascript:void(0)">
+            <img
+              class="project-img"
+              src="public/imgs/optic-dashboard1.png"
+              alt="optic-analytics-ui"
+            />
+            <!-- <div class="overlay">
+              <span class="project-view"> View Demo </span>
+            </div> -->
+          </a>
+          <p>
+            A full stack analytics visualization app using Next.js, Firebase,
+            and D3.js. In conjunction with serverless functions, user metrics
+            are tracked and plotted.
+          </p>
+          <a href="javascript:void(0)" id="locked-link">Locked</a>
+        </div>
         <div class="project project-tile reveal fade-bottom">
           <span>Todos Tasker</span>
           <a

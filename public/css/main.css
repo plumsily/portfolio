@@ -36,10 +36,16 @@ html::-webkit-scrollbar-thumb {
   padding: 2rem 2rem;
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100vw;
+  right: 0;
+  /* width: 100vw; */
   height: max-content;
   z-index: 100;
+}
+header > :first-child {
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 1.5rem 1.5rem;
 }
 .logo {
   width: 6rem;
@@ -51,8 +57,8 @@ html::-webkit-scrollbar-thumb {
 }
 #navbar > div {
   display: flex;
-  flex-direction: column;
-  align-items: start;
+  flex-direction: row;
+  align-items: end;
   gap: 1rem;
 }
 .nav-links {
@@ -66,7 +72,7 @@ html::-webkit-scrollbar-thumb {
   text-align: center;
   /* text-transform: uppercase; */
   color: white;
-  display: inline-block;
+  display: flex;
   transition: all 150ms cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .nav-links:hover {
@@ -163,7 +169,8 @@ footer {
 }
 
 #navbar,
-.links-section {
+.links-section,
+header > a {
   animation: fade 1000ms ease-out 2000ms 1 normal forwards;
   opacity: 0;
 }

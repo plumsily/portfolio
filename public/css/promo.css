@@ -68,6 +68,9 @@
 }
 
 #promo-dev {
+  display: flex;
+}
+#promo {
   display: none;
 }
 
