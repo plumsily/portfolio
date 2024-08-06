@@ -314,6 +314,9 @@
 #projects .projects--dev-grid .reveal:nth-child(4) {
   animation-delay: 300ms;
 }
-#projects .projects--dev-grid .reveal:nth-child(4) {
+#projects .projects--dev-grid .reveal:nth-child(5) {
   animation-delay: 400ms;
+}
+#projects .projects--dev-grid .reveal:nth-child(6) {
+  animation-delay: 500ms;
 }
